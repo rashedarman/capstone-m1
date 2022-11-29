@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+  --color-accent: hsl(6, 82%, 59%);
+  --color-primary: hsl(222, 11%, 17%);
+  --color-neutral: hsl(0, 0%, 83%);
+
+  --ff-primary: "Lato", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* general styling */
+
+body {
+  font-family: var(--ff-primary);
+  color: var(--color-primary);
+}
