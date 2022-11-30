@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Cinzel:wght@600&display=swap");
 
 :root {
   --color-accent: hsl(6, 82%, 59%);
@@ -6,6 +7,8 @@
   --color-neutral: hsl(0, 0%, 83%);
 
   --ff-primary: "Lato", sans-serif;
+
+  --breakpoint-md: 48em; /* 768px */
 }
 
 body {
@@ -25,4 +28,61 @@ svg {
 body {
   font-family: var(--ff-primary);
   color: var(--color-primary);
+}
+
+/* component styles */
+
+.logo-primary {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #69ba85;
+  line-height: 1.3;
+  background-color: #3d5757;
+  padding: 0 4px;
+  margin: 0;
+}
+
+.logo-primary > span {
+  color: #cefde0;
+  line-height: 1.8;
+  display: inline-block;
+}
+
+/* animate hamburger menu */
+
+.navbar-toggler span {
+  display: block;
+  background-color: var(--color-primary);
+  height: 3px;
+  width: 25px;
+  margin: 5px 0;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center left;
+}
+
+.navbar-toggler span:first-child {
+  margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(15%, 33%) rotate(-45deg);
+}
+
+/* media queries */
+
+@media screen and (min-width: 48em) {
+  .logo-primary {
+    font-size: 30px;
+    padding: 0 8px;
+  }
 }
