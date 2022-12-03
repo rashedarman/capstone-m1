@@ -87,6 +87,25 @@ h6 {
   border: 3px solid #fefefe;
 }
 
+#ecosystem .card {
+  color: var(--color-neutral);
+  background-color: hsla(0, 0%, 83%, 0.25);
+}
+
+.img-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.seperator {
+  display: block;
+  width: 25%;
+  border-bottom: 3px solid var(--color-accent);
+  border-radius: 0.25em;
+  margin: auto;
+  margin-top: 0.5em;
+}
+
 /* animate hamburger menu */
 
 .navbar-toggler span {
@@ -98,10 +117,6 @@ h6 {
   position: relative;
   transition: all 0.35s ease-out;
   transform-origin: center left;
-}
-
-.navbar-toggler span:last-child {
-  height: 4px;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
