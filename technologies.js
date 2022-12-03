@@ -34,7 +34,7 @@ const technologiesData = [
 let sectionHtml = "";
 technologiesData.forEach(({ name, image, description }) => {
   sectionHtml += `
-          <div class="col mt-3">
+          <div class="col">
             <div class="card">
                 <div class="row g-0">
                     <div class="col-4 d-flex flex-row align-items-center justify-content-center">
@@ -52,7 +52,7 @@ technologiesData.forEach(({ name, image, description }) => {
 });
 
 const parentRow = document.createElement("div");
-parentRow.classList.add("row", "row-cols-1", "row-cols-md-5");
+parentRow.classList.add("row", "row-cols-1", "row-cols-md-5", "g-2");
 parentRow.innerHTML = sectionHtml;
 
 document.querySelector("#technologies .container").appendChild(parentRow);
