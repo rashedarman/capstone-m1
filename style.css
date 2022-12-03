@@ -5,16 +5,16 @@
   --color-primary: hsl(222, 11%, 17%);
   --color-neutral: hsl(0, 0%, 83%);
   --color-success: hsl(141, 37%, 57%);
-
   --ff-primary: "Lato", sans-serif;
   --ff-heading: "Montserrat", serif;
-
   --breakpoint-md: 48em; /* 768px */
 }
 
 body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+  font-family: var(--ff-primary);
+  color: var(--color-primary);
 }
 
 img,
@@ -25,11 +25,6 @@ svg {
 }
 
 /* general styling */
-
-body {
-  font-family: var(--ff-primary);
-  color: var(--color-primary);
-}
 
 h1,
 h2,
