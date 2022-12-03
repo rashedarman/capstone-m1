@@ -29,6 +29,12 @@ const featureData = [
     description:
       'Deploy your app to serverless hosts like Netlify and Vercel, build for containers, or deploy to bare metal.',
   },
+  {
+    name: 'Test',
+    image: './public/feature2.png',
+    description:
+      "Whether it's TDD or DDT, Redwood uses Jest along with mocks and scenarios to verify functionality on the frontend and the backend.",
+  },
 ];
 
 let sectionHtml = '';

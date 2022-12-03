@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
 :root {
   --color-accent: hsl(6, 82%, 59%);
@@ -12,7 +12,8 @@
 
 body {
   line-height: 1.5;
-  text-rendering: optimizeSpeed;
+
+  /* text-rendering: optimizeSpeed; */
   font-family: var(--ff-primary);
   color: var(--color-primary);
 }
@@ -47,12 +48,17 @@ h6 {
   padding: 0 4px;
   margin: 0;
   text-align: center;
+  text-decoration: none;
 }
 
 .logo-primary > span {
   color: #cefde0;
   line-height: 1.8;
   display: inline-block;
+}
+
+.logo-primary:hover {
+  color: var(--color-success);
 }
 
 #heading {
@@ -84,6 +90,7 @@ h6 {
 .lead-text {
   border: 3px solid #fefefe;
   font-size: 1rem;
+  background-color: hsl(195, 11%, 86%);
 }
 
 #technologies .card {
@@ -149,7 +156,7 @@ h6 {
   }
 
   #heading {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 126px);
   }
 
   .lead-title {
