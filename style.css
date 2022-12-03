@@ -87,7 +87,7 @@ h6 {
   border: 3px solid #fefefe;
 }
 
-#ecosystem .card {
+#technologies .card {
   color: var(--color-neutral);
   background-color: hsla(0, 0%, 83%, 0.25);
 }
