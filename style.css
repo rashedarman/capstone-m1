@@ -78,15 +78,17 @@ h6 {
 }
 
 #heading .col > *:not(:first-child) {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .lead-title {
   color: var(--color-accent);
+  font-size: 2rem;
 }
 
 .lead-text {
   border: 3px solid #fefefe;
+  font-size: 1rem;
 }
 
 #technologies .card {
@@ -143,5 +145,13 @@ h6 {
 
   #heading {
     min-height: calc(100vh - 80px);
+  }
+
+  .lead-title {
+    font-size: 3rem;
+  }
+
+  .lead-text {
+    font-size: 1.1rem;
   }
 }

@@ -35,13 +35,13 @@ let sectionHtml = "";
 technologiesData.forEach(({ name, image, description }) => {
   sectionHtml += `
           <div class="col">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-4 d-flex flex-row align-items-center justify-content-center">
+            <div class="card py-3" style="height:100%">
+                <div class="row g-0 flex-md-column">
+                    <div class="col-4 col-md-12 d-flex flex-row flex-md-column align-items-center justify-content-center">
                         <img src="${image}" class="img-icon" alt="${name}" />
                         <p class="image-caption fs-5 fw-bold m-2">${name}</p>
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 col-md-12">
                         <div class="card-body">
                             <p class="card-text">${description}</p>
                         </div>
