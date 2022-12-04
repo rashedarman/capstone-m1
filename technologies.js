@@ -32,22 +32,23 @@ const technologiesData = [
 ];
 
 let sectionHtml = '';
+
 technologiesData.forEach(({ name, image, description }) => {
   sectionHtml += `
-          <div class="col">
-            <div class="card py-3" style="height:100%">
-                <div class="row g-0 flex-md-column">
-                    <div class="col-4 col-md-12 d-flex flex-row flex-md-column align-items-center justify-content-center">
-                        <img src="${image}" class="img-icon" alt="${name}" />
-                        <p class="image-caption fs-5 fw-bold m-2">${name}</p>
-                    </div>
-                    <div class="col-8 col-md-12">
-                        <div class="card-body">
-                            <p class="card-text">${description}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col">
+          <div class="card py-3" style="height:100%">
+              <div class="row g-0 flex-md-column">
+                  <div class="col-4 col-md-12 d-flex flex-row flex-md-column align-items-center justify-content-center">
+                      <img src="${image}" class="img-icon" alt="${name}" />
+                      <p class="image-caption fs-5 fw-bold m-2">${name}</p>
+                  </div>
+                  <div class="col-8 col-md-12">
+                      <div class="card-body">
+                          <p class="card-text">${description}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>`;
 });
 
@@ -56,3 +57,23 @@ parentRow.classList.add('row', 'row-cols-1', 'row-cols-md-5', 'g-2');
 parentRow.innerHTML = sectionHtml;
 
 document.querySelector('#technologies .container').appendChild(parentRow);
+
+const buttonHtml = `
+  <button
+    class="btn text-capitalize my-3 px-4 py-3 mx-auto d-block d-md-none text-light rounded-0"
+    style="background-color: hsl(6, 82%, 59%)"
+  >
+    join global summit
+  </button>
+
+  <button
+    class="btn btn-link mx-auto my-3 d-none d-md-block text-light text-uppercase"
+  >
+    see the whole program
+  </button>
+`;
+
+const actionButtonDiv = document.createElement('div');
+actionButtonDiv.innerHTML = buttonHtml;
+
+document.querySelector('#technologies .container').appendChild(actionButtonDiv);
