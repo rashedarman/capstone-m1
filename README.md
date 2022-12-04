@@ -36,6 +36,8 @@
 
 **Capstone project for module 1**
 
+- [Video walkthrough](https://www.loom.com/share/0d7f55803b26442296f37709795a78cb)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
